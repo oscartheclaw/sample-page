@@ -3,45 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Page - OpenClaw Demo</title>
+    <title>Sample Page — OpenClaw</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>🚀 Hello, World!</h1>
-            <p class="subtitle">Deployed via OpenClaw to GitHub Pages</p>
-        </header>
-        
-        <main>
-            <section class="card">
-                <h2>About This Page</h2>
-                <p>This is a sample static website created and deployed automatically. It demonstrates how OpenClaw can help you build and publish web content.</p>
-            </section>
-            
-            <section class="card">
-                <h2>Features</h2>
-                <ul>
-                    <li>✨ Clean, modern design</li>
-                    <li>📱 Fully responsive</li>
-                    <li>⚡ Fast loading (static HTML)</li>
-                    <li>🎨 Customizable styling</li>
-                </ul>
-            </section>
-            
-            <section class="card interactive">
-                <h2>Interactive Demo</h2>
-                <p>Click the button below:</p>
-                <button id="clickBtn" class="btn-primary">Click Me!</button>
-                <p id="message" class="hidden"></p>
-            </section>
-        </main>
-        
-        <footer>
-            <p>Made with ❤️ by OpenClaw | <span id="year"></span></p>
-        </footer>
-    </div>
+    <div class="gradient-bg"></div>
     
+    <main class="container">
+        <header class="hero">
+            <span class="badge">OpenClaw Demo</span>
+            <h1>Minimal.<br>Modern.<br>Deployed.</h1>
+            <p class="subtitle">A clean, dark-themed static site built and deployed automatically.</p>
+        </header>
+
+        <section class="content">
+            <div class="card glass">
+                <div class="card-icon">✦</div>
+                <h2>About</h2>
+                <p>This page demonstrates modern web design principles: minimalism, dark mode, glassmorphism, and smooth interactions.</p>
+            </div>
+
+            <div class="card glass">
+                <div class="card-icon">◈</div>
+                <h2>Features</h2>
+                <ul class="feature-list">
+                    <li>Dark aesthetic with subtle gradients</li>
+                    <li>Glassmorphism cards</li>
+                    <li>Smooth micro-interactions</li>
+                    <li>Responsive & mobile-first</li>
+                    <li>Zero dependencies</li>
+                </ul>
+            </div>
+
+            <div class="card glass interactive">
+                <div class="card-icon">▣</div>
+                <h2>Try It</h2>
+                <p class="hint">Click to see the interaction</p>
+                <button id="actionBtn" class="btn">
+                    <span class="btn-text">Explore</span>
+                    <span class="btn-arrow">→</span>
+                </button>
+                <div id="response" class="response hidden">
+                    <span class="response-icon">✓</span>
+                    <span class="response-text"></span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-line"></div>
+            <p>Built with OpenClaw <span class="dot"></span> <span id="year"></span></p>
+        </footer>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
